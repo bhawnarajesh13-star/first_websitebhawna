@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhysicsApplied – Class 10 NCERT Physics</title>
+  <meta name="description" content="Learn Class 10 NCERT Physics through real-world applied examples – Light, Electricity, Magnetism and more."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#">⚡ PhysicsApplied</a>
+    <ul class="nav-links">
+      <li><a href="#chapters">Chapters</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="particles" id="particles"></div>
+  <div class="hero-content">
+    <span class="badge">Class 10 · NCERT Physics</span>
+    <h1>Applied Learning<br/><span class="gradient-text">Physics in Action</span></h1>
+    <p>Stop memorising formulas. Start <em>seeing</em> physics in everyday life. Each concept mapped to real‑world applications, experiments & examples.</p>
+    <div class="hero-btns">
+      <a href="#chapters" class="btn btn-primary">Explore Chapters</a>
+      <a href="#examples" class="btn btn-outline">See Examples</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>5</span><small>Chapters</small></div>
+      <div class="stat"><span>30+</span><small>Applications</small></div>
+      <div class="stat"><span>10</span><small>Quiz Questions</small></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit-ring ring1"></div>
+    <div class="orbit-ring ring2"></div>
+    <div class="orbit-ring ring3"></div>
+    <div class="core-atom">⚛</div>
+  </div>
+</section>
+
+<!-- ===== CHAPTERS ===== -->
+<section class="section" id="chapters">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Curriculum</span>
+      <h2>Five Core Chapters</h2>
+      <p>Click a chapter to dive into its applied examples</p>
+    </div>
+    <div class="chapters-grid">
+
+      <div class="chapter-card" data-target="light" onclick="scrollToChapter('light')">
+        <div class="card-icon">🔦</div>
+        <div class="card-label">Chapter 1</div>
+        <h3>Light – Reflection & Refraction</h3>
+        <p>Mirrors, lenses, rainbows, optical fibres and more.</p>
+        <div class="card-tags"><span>Mirrors</span><span>Lenses</span><span>Optics</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+
+      <div class="chapter-card" data-target="eye" onclick="scrollToChapter('eye')">
+        <div class="card-icon">👁️</div>
+        <div class="card-label">Chapter 2</div>
+        <h3>The Human Eye & Colourful World</h3>
+        <p>Vision defects, spectacles, dispersion, sky colour.</p>
+        <div class="card-tags"><span>Vision</span><span>Prism</span><span>Rainbow</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+
+      <div class="chapter-card" data-target="electricity" onclick="scrollToChapter('electricity')">
+        <div class="card-icon">⚡</div>
+        <div class="card-label">Chapter 3</div>
+        <h3>Electricity</h3>
+        <p>Ohm's law, resistors, circuits, household wiring.</p>
+        <div class="card-tags"><span>Ohm's Law</span><span>Circuits</span><span>Power</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+
+      <div class="chapter-card" data-target="magnetism" onclick="scrollToChapter('magnetism')">
+        <div class="card-icon">🧲</div>
+        <div class="card-label">Chapter 4</div>
+        <h3>Magnetic Effects of Electric Current</h3>
+        <p>Electromagnets, motors, generators, AC/DC.</p>
+        <div class="card-tags"><span>Motors</span><span>Generators</span><span>EMF</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+
+      <div class="chapter-card" data-target="energy" onclick="scrollToChapter('energy')">
+        <div class="card-icon">🌱</div>
+        <div class="card-label">Chapter 5</div>
+        <h3>Sources of Energy</h3>
+        <p>Solar, wind, nuclear, fossil fuels and sustainability.</p>
+        <div class="card-tags"><span>Solar</span><span>Wind</span><span>Nuclear</span></div>
+        <div class="card-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXAMPLES SECTION ===== -->
+<section class="section dark-section" id="examples">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Applied Learning</span>
+      <h2>Concepts in Real Life</h2>
+      <p>Every formula has a story — here's where it lives</p>
+    </div>
+
+    <!-- LIGHT -->
+    <div class="chapter-block" id="light">
+      <div class="chapter-title-bar">
+        <span class="ch-icon">🔦</span>
+        <div>
+          <h3>Light – Reflection & Refraction</h3>
+          <p>Key laws that govern how light bounces and bends</p>
+        </div>
+      </div>
+      <div class="examples-grid">
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">01</span>
+            <span class="ex-tag">Reflection</span>
+          </div>
+          <h4>Rear-view Mirrors in Cars</h4>
+          <p>Cars use <strong>convex mirrors</strong> as rear-view mirrors because they give a wider field of view. The image formed is virtual, erect and diminished.</p>
+          <div class="formula-box">
+            <span class="label">Mirror Formula</span>
+            <code>1/f = 1/v + 1/u</code>
+          </div>
+          <div class="real-world">
+            <span>🚗</span>
+            <p>A convex mirror with focal length 30 cm gives a wider view — essential for safe driving.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">02</span>
+            <span class="ex-tag">Refraction</span>
+          </div>
+          <h4>A Straw Looks Bent in Water</h4>
+          <p>Light travels from water (denser) to air (rarer) and bends away from the normal — making the straw appear bent at the water surface.</p>
+          <div class="formula-box">
+            <span class="label">Snell's Law</span>
+            <code>n₁ sin θ₁ = n₂ sin θ₂</code>
+          </div>
+          <div class="real-world">
+            <span>🥤</span>
+            <p>Refractive index of water ≈ 1.33. Light bends at the air-water interface creating the illusion.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">03</span>
+            <span class="ex-tag">Lenses</span>
+          </div>
+          <h4>Magnifying Glass (Convex Lens)</h4>
+          <p>A <strong>convex lens</strong> converges light rays. When an object is placed within the focal length, it acts as a magnifying glass producing a virtual, erect, and enlarged image.</p>
+          <div class="formula-box">
+            <span class="label">Magnification</span>
+            <code>m = v / u = h' / h</code>
+          </div>
+          <div class="real-world">
+            <span>🔍</span>
+            <p>Jewellers use convex lenses (f ≈ 5 cm) to inspect gems — the lens is held close to the eye and object.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">04</span>
+            <span class="ex-tag">Total Internal Reflection</span>
+          </div>
+          <h4>Optical Fibre & Internet</h4>
+          <p>Light travels through optical fibres by <strong>total internal reflection</strong>. The fibre core is denser than the cladding, so light bounces repeatedly without escaping.</p>
+          <div class="formula-box">
+            <span class="label">Critical Angle Condition</span>
+            <code>sin C = n₂ / n₁  (n₁ > n₂)</code>
+          </div>
+          <div class="real-world">
+            <span>🌐</span>
+            <p>Your broadband internet likely travels as light pulses in glass fibres — 100 Gbps+ speeds!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HUMAN EYE -->
+    <div class="chapter-block" id="eye">
+      <div class="chapter-title-bar">
+        <span class="ch-icon">👁️</span>
+        <div>
+          <h3>Human Eye & Colourful World</h3>
+          <p>Vision, defects, corrections and atmospheric optics</p>
+        </div>
+      </div>
+      <div class="examples-grid">
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">05</span>
+            <span class="ex-tag">Myopia</span>
+          </div>
+          <h4>Short-sightedness & Spectacles</h4>
+          <p>In <strong>myopia</strong>, the image forms in front of the retina. A <em>concave lens</em> of suitable power diverges rays so they focus correctly on the retina.</p>
+          <div class="formula-box">
+            <span class="label">Lens Power</span>
+            <code>P = 1/f (in metres) → unit: Dioptre</code>
+          </div>
+          <div class="real-world">
+            <span>👓</span>
+            <p>A person can see only up to 2 m. Correction lens: P = 1/(-2) = −0.5 D (concave).</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">06</span>
+            <span class="ex-tag">Dispersion</span>
+          </div>
+          <h4>Rainbow Formation</h4>
+          <p>Raindrops act as tiny prisms. Sunlight undergoes <strong>refraction, total internal reflection, and dispersion</strong> inside each raindrop, splitting into the spectrum of VIBGYOR.</p>
+          <div class="formula-box">
+            <span class="label">Dispersion</span>
+            <code>Violet bends most, Red bends least</code>
+          </div>
+          <div class="real-world">
+            <span>🌈</span>
+            <p>Primary rainbow: 40°–42° from anti-solar point. You always see it opposite the sun!</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">07</span>
+            <span class="ex-tag">Scattering</span>
+          </div>
+          <h4>Why is the Sky Blue?</h4>
+          <p><strong>Rayleigh scattering</strong> – shorter (blue) wavelengths are scattered more by atmospheric particles. Our eyes receive more scattered blue light from all directions.</p>
+          <div class="formula-box">
+            <span class="label">Scattering ∝</span>
+            <code>1 / λ⁴  (Rayleigh Law)</code>
+          </div>
+          <div class="real-world">
+            <span>🌤️</span>
+            <p>At sunrise/sunset, light travels further through the atmosphere — blue is scattered away, leaving red/orange.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">08</span>
+            <span class="ex-tag">Hypermetropia</span>
+          </div>
+          <h4>Long-sightedness & Convex Lens</h4>
+          <p>In <strong>hypermetropia</strong>, image forms behind the retina. A <em>convex lens</em> converges rays so they focus on the retina.</p>
+          <div class="formula-box">
+            <span class="label">Near Point shifted</span>
+            <code>P = +ve Dioptre (convex lens)</code>
+          </div>
+          <div class="real-world">
+            <span>📖</span>
+            <p>Reading glasses are convex lenses. A person with near point at 1 m needs P = 1/0.25 − 1/1 = +3 D.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ELECTRICITY -->
+    <div class="chapter-block" id="electricity">
+      <div class="chapter-title-bar">
+        <span class="ch-icon">⚡</span>
+        <div>
+          <h3>Electricity</h3>
+          <p>Current, resistance, Ohm's law and power in daily life</p>
+        </div>
+      </div>
+      <div class="examples-grid">
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">09</span>
+            <span class="ex-tag">Ohm's Law</span>
+          </div>
+          <h4>Electric Heater Design</h4>
+          <p>A heater's coil has <strong>high resistance</strong>. By Ohm's law, V = IR, more resistance → more heat for the same voltage. The coil is made of nichrome (high ρ, high melting point).</p>
+          <div class="formula-box">
+            <span class="label">Ohm's Law</span>
+            <code>V = I × R</code>
+          </div>
+          <div class="real-world">
+            <span>🔥</span>
+            <p>A 2000 W heater on 220 V draws I = 2000/220 ≈ 9.1 A. Resistance ≈ 24.2 Ω.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">10</span>
+            <span class="ex-tag">Series Circuit</span>
+          </div>
+          <h4>Old Christmas Lights</h4>
+          <p>Old fairy lights were wired in <strong>series</strong>. If one bulb blew, the whole string went out — because breaking one resistor opens the entire circuit.</p>
+          <div class="formula-box">
+            <span class="label">Series Resistance</span>
+            <code>R_total = R₁ + R₂ + R₃ + …</code>
+          </div>
+          <div class="real-world">
+            <span>🎄</span>
+            <p>Modern LEDs use parallel wiring — one fails, others stay on. R_parallel = 1/(1/R₁ + 1/R₂…)</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">11</span>
+            <span class="ex-tag">Electric Power</span>
+          </div>
+          <h4>Reading Your Electricity Bill</h4>
+          <p>Energy is sold in <strong>kilowatt-hours (kWh)</strong>. One unit = 1 kWh. A 100 W bulb on for 10 hours consumes 1 unit.</p>
+          <div class="formula-box">
+            <span class="label">Power & Energy</span>
+            <code>P = VI = I²R;  E = P × t</code>
+          </div>
+          <div class="real-world">
+            <span>💡</span>
+            <p>A 5-star AC (1500 W) running 8 h/day for 30 days = 360 kWh. At ₹6/unit → ₹2,160 per month.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">12</span>
+            <span class="ex-tag">Fuse</span>
+          </div>
+          <h4>Safety Fuse in Your Home</h4>
+          <p>A <strong>fuse wire</strong> has low melting point and low resistance. When excess current flows, it heats up (P = I²R) and melts, breaking the circuit before damage occurs.</p>
+          <div class="formula-box">
+            <span class="label">Heating Effect</span>
+            <code>H = I² × R × t  (Joule's Law)</code>
+          </div>
+          <div class="real-world">
+            <span>🔌</span>
+            <p>A 5 A fuse melts if current exceeds 5 A — protects expensive appliances from short circuits.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAGNETISM -->
+    <div class="chapter-block" id="magnetism">
+      <div class="chapter-title-bar">
+        <span class="ch-icon">🧲</span>
+        <div>
+          <h3>Magnetic Effects of Electric Current</h3>
+          <p>Electromagnets, motors, generators and electromagnetic induction</p>
+        </div>
+      </div>
+      <div class="examples-grid">
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">13</span>
+            <span class="ex-tag">Electromagnet</span>
+          </div>
+          <h4>MRI Machines in Hospitals</h4>
+          <p>MRI scanners use <strong>superconducting electromagnets</strong> generating fields of 1–3 Tesla. The magnetic field aligns hydrogen protons in the body to create detailed images.</p>
+          <div class="formula-box">
+            <span class="label">Magnetic Field (Solenoid)</span>
+            <code>B = μ₀ n I</code>
+          </div>
+          <div class="real-world">
+            <span>🏥</span>
+            <p>More turns (n) and more current (I) → stronger B field. That's why MRI coils have thousands of turns.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">14</span>
+            <span class="ex-tag">Electric Motor</span>
+          </div>
+          <h4>Ceiling Fan Motor</h4>
+          <p>A current-carrying coil in a magnetic field experiences a <strong>force (Fleming's LHR)</strong>. This rotates the armature — converting electrical energy to mechanical energy.</p>
+          <div class="formula-box">
+            <span class="label">Force on conductor</span>
+            <code>F = B I L sin θ</code>
+          </div>
+          <div class="real-world">
+            <span>🌀</span>
+            <p>Your ceiling fan, mixer, washing machine, and electric vehicles all use this principle.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">15</span>
+            <span class="ex-tag">Electromagnetic Induction</span>
+          </div>
+          <h4>Power Plant Generators</h4>
+          <p>A rotating coil in a magnetic field <strong>induces an EMF</strong> (Faraday's Law). This is how all electricity is generated — coal, hydro, wind, and nuclear plants.</p>
+          <div class="formula-box">
+            <span class="label">Faraday's Law</span>
+            <code>ε = −N × ΔΦ/Δt</code>
+          </div>
+          <div class="real-world">
+            <span>🏭</span>
+            <p>A 500 MW generator at a power plant rotates at 50 Hz — producing 50 cycles/sec of AC current.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">16</span>
+            <span class="ex-tag">AC vs DC</span>
+          </div>
+          <h4>Why AC is Used for Transmission</h4>
+          <p><strong>AC voltage can be stepped up</strong> using transformers to reduce I²R losses during long-distance transmission. DC cannot be transformed — so AC is preferred nationally.</p>
+          <div class="formula-box">
+            <span class="label">Transformer Ratio</span>
+            <code>V_s/V_p = N_s/N_p</code>
+          </div>
+          <div class="real-world">
+            <span>🗼</span>
+            <p>Power leaves plants at 220 kV, travels to cities, is stepped down to 11 kV then 220 V for homes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ENERGY -->
+    <div class="chapter-block" id="energy">
+      <div class="chapter-title-bar">
+        <span class="ch-icon">🌱</span>
+        <div>
+          <h3>Sources of Energy</h3>
+          <p>Conventional and non-conventional energy with real applications</p>
+        </div>
+      </div>
+      <div class="examples-grid">
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">17</span>
+            <span class="ex-tag">Solar Energy</span>
+          </div>
+          <h4>Solar Panels on Rooftops</h4>
+          <p><strong>Photovoltaic cells</strong> (solar cells) convert sunlight directly to electricity using the photoelectric effect. Connected in series/parallel they form solar panels.</p>
+          <div class="formula-box">
+            <span class="label">Solar Power</span>
+            <code>P = η × A × I_solar</code>
+          </div>
+          <div class="real-world">
+            <span>☀️</span>
+            <p>A 1 kW rooftop system generates ~4–5 units/day in India — saving ₹24–30 daily at ₹6/unit.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">18</span>
+            <span class="ex-tag">Wind Energy</span>
+          </div>
+          <h4>Wind Turbines</h4>
+          <p>Wind (kinetic energy) spins turbine blades which rotate a generator — converting KE to electrical energy. India is world's 4th largest wind power producer.</p>
+          <div class="formula-box">
+            <span class="label">Wind Power</span>
+            <code>P = ½ ρ A v³</code>
+          </div>
+          <div class="real-world">
+            <span>💨</span>
+            <p>Doubling wind speed → 8× more power! That's why turbines are placed on hills and coasts.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">19</span>
+            <span class="ex-tag">Hydropower</span>
+          </div>
+          <h4>Bhakra Nangal Dam</h4>
+          <p>Water stored at height has <strong>gravitational PE</strong>. Released through penstocks, it converts to KE, spinning turbines to generate electricity. Zero fuel cost!</p>
+          <div class="formula-box">
+            <span class="label">Potential Energy</span>
+            <code>PE = mgh</code>
+          </div>
+          <div class="real-world">
+            <span>🌊</span>
+            <p>Bhakra Dam (226 m high) generates 1325 MW — powering millions of homes in Punjab, Haryana, HP.</p>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="ex-header">
+            <span class="ex-num">20</span>
+            <span class="ex-tag">Nuclear Energy</span>
+          </div>
+          <h4>Tarapur Atomic Power Station</h4>
+          <p><strong>Nuclear fission</strong> of Uranium-235: one neutron splits a U-235 nucleus releasing ~200 MeV of energy and 2–3 more neutrons (chain reaction).</p>
+          <div class="formula-box">
+            <span class="label">Mass-Energy Relation</span>
+            <code>E = mc²</code>
+          </div>
+          <div class="real-world">
+            <span>☢️</span>
+            <p>1 kg of U-235 releases energy equivalent to burning 3,000 tonnes of coal — with zero CO₂ emissions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section class="section" id="quiz">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Test Yourself</span>
+      <h2>Quick Quiz</h2>
+      <p>10 applied questions — can you score full marks?</p>
+    </div>
+    <div class="quiz-wrapper">
+      <div class="quiz-box" id="quiz-box">
+        <div class="quiz-progress">
+          <div class="quiz-prog-bar" id="quiz-prog-bar"></div>
+        </div>
+        <div id="quiz-content"></div>
+      </div>
+      <div class="quiz-result hidden" id="quiz-result">
+        <div class="result-icon" id="result-icon">🏆</div>
+        <h3 id="result-title">Great Job!</h3>
+        <p id="result-desc"></p>
+        <button class="btn btn-primary" onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section dark-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="tag">About This Resource</span>
+        <h2>Why Applied Learning?</h2>
+        <p>Traditional rote learning makes students memorise formulas without truly understanding them. <strong>Applied learning bridges the gap</strong> between textbook concepts and the real world.</p>
+        <p>When you understand <em>why</em> a concave mirror is used in a car, or <em>how</em> the fuse in your home saves appliances — the formula becomes intuitive, not just a line to reproduce in an exam.</p>
+        <p>This resource is aligned with <strong>NCERT Class 10 Science</strong> (Physics portion) and follows the latest CBSE curriculum.</p>
+        <div class="about-features">
+          <div class="af">✅ NCERT Aligned</div>
+          <div class="af">✅ CBSE Board Ready</div>
+          <div class="af">✅ Real Examples</div>
+          <div class="af">✅ Formula Revision</div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="info-cards">
+          <div class="info-c"><span>📚</span><p>Based on NCERT Science Class X</p></div>
+          <div class="info-c"><span>🎯</span><p>Concept → Application mapped</p></div>
+          <div class="info-c"><span>🧪</span><p>Lab activities referenced</p></div>
+          <div class="info-c"><span>📊</span><p>Formula quick-reference cards</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>⚡ <strong>PhysicsApplied</strong> · Class 10 NCERT Physics · Applied Learning Resource</p>
+    <p style="margin-top:0.5rem;opacity:0.5;font-size:0.85rem;">Made with ❤️ for curious minds · CBSE & NCERT Aligned</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
